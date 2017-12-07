@@ -1,0 +1,59 @@
+/* Dashboard Widget Styles
+-------------------------------------------------------------- */
+
+.wppm-dashboard-widget table thead td{
+	border-bottom: 1px solid #ececec;
+	color: #777;
+}
+.wppm-dashboard-widget .table_left {
+	float: left;
+	width: 45%;
+}
+.wppm-dashboard-widget .table_right {
+	float: right;
+	width: 45%;
+}
+.wppm-dashboard-widget .inside {
+	font-size: 12px;
+}
+.wppm-dashboard-widget td {
+	padding: 3px 0;
+}
+.wppm-dashboard-widget .b,
+.wppm-dashboard-widget .t {
+	line-height: 1.5;
+	vertical-align: middle;
+}
+.wppm-dashboard-widget .b {
+	font-size: 14px;
+	padding-right: 6px;
+	width: auto;
+}
+.wppm-dashboard-widget .t {
+	font-size: 12px;
+	padding-right: 12px;
+	color: #777;
+	width: 100%;
+}
+.wppm-dashboard-widget .label_heading {
+	border-top: 1px solid #ececec;
+	color: #8f8f8f;
+	font-size: 12px;
+	font-weight: normal;
+	display: block;
+	padding-top: 10px;
+	margin: 0 0 8px 12px;
+}
+.wppm-dashboard-widget table {
+	width: 100%;
+	margin-left: 0;
+	margin-bottom: 1em;
+}
+
+@media handheld, only screen and (max-width: 1000px) {
+
+	.wppm-dashboard-widget .edd-recent-email {
+		display: none;
+	}
+
+}
