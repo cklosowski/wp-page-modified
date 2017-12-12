@@ -23,6 +23,10 @@ By connecting this plugin with your [Page Modified](https://pagemodified.com) AP
 6a. If the Widget does not show, click the 'Screen Options' menu from the top right of the screen and check the box for 'Page Modified - Last Crawl'
 
 == Changelog ==
+
+= 1.0.1 =
+* Fix: Re-introduce caching into the API calls.
+
 = 1.0 =
 * New: Initial Release
 
