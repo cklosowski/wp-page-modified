@@ -78,10 +78,10 @@ class Page_Modified_Dashboard_Widget {
 
 				// These labels appear in the legend and in the tooltips when hovering different arcs
 				labels: [
-					'2xx — <?php echo $last_crawl->history->status_200; ?>',
-					'3xx — <?php echo $last_crawl->history->status_300; ?>',
-					'4xx — <?php echo $last_crawl->history->status_400; ?>',
-					'5xx — <?php echo $last_crawl->history->status_500; ?>',
+					'2xx',
+					'3xx',
+					'4xx',
+					'5xx',
 				],
 
 			};
