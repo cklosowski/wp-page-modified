@@ -8,7 +8,7 @@
 class Page_Modified_API {
 
 	private static $api_key;
-	private static $use_cache = false;
+	private static $use_cache = true;
 	private static $api_url   = 'https://app.pagemodified.com/api/v1/';
 
 	public function __construct() {
