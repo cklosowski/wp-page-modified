@@ -112,7 +112,7 @@ class WP_Page_Modified_Settings {
 		}
 
 		$domain_id = get_option( 'page_modified_domain_id' );
-		$domains   = wp_page_modified()->domains->domains();
+		$domains   = wp_page_modified()->domains->get_list();
 		if ( is_array( $domains ) ) {
 			?>
 			<select name="page_modified_domain_id">

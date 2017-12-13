@@ -14,7 +14,7 @@ class Page_Modified_API_Domains extends Page_Modified_API {
 	 *
 	 * @return array|mixed|object|WP_Error
 	 */
-	public function domains() {
+	public function get_list() {
 		return $this->request( 'domain' );
 	}
 

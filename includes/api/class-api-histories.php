@@ -27,7 +27,7 @@ class Page_Modified_API_Histories extends Page_Modified_API {
 	 *
 	 * @return array|mixed|object|WP_Error
 	 */
-	public function histories() {
+	public function get_list() {
 		return $this->request( 'domain/' . self::$domain_id . '/histories' );
 	}
 
@@ -39,7 +39,7 @@ class Page_Modified_API_Histories extends Page_Modified_API {
 	 * @return array|mixed|object|WP_Error
 	 */
 	public function last() {
-		$history    = $this->histories();
+		$history    = $this->get_list();
 		$last_crawl = false;
 
 		foreach ( $history as $key => $crawl ) {
