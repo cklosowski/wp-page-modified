@@ -52,7 +52,7 @@ class Page_Modified_Domain {
 	 */
 	private function get_history( $id = false ) {
 		if ( false === $id ) {
-			return $this->history->list();
+			return $this->history->get_list();
 		} else {
 			return $this->history->get( $id );
 		}
