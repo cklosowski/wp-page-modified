@@ -3,7 +3,7 @@ Contributors: cklosows
 Tags: page modified, pagemodified, crawler, utility
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Donate link: https://chrisk.io/i/donate
 License: GPLv2 or later
 
@@ -23,6 +23,10 @@ By connecting this plugin with your [Page Modified](https://pagemodified.com) AP
 6a. If the Widget does not show, click the 'Screen Options' menu from the top right of the screen and check the box for 'Page Modified - Last Crawl'
 
 == Changelog ==
+
+= 1.0.2 =
+* New: Added crawl completion date and time to the dashboard widget.
+* Fix: Prevent a potential jQuery conflict.
 
 = 1.0.1 =
 * Fix: Re-introduce caching into the API calls.

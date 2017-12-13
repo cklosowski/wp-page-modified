@@ -1,6 +1,6 @@
 {
   "name": "wp-page-modified",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": false,
   "devDependencies": {
     "grunt": "^1.0.1",
