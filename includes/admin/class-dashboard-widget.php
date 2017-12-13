@@ -56,6 +56,7 @@ class Page_Modified_Dashboard_Widget {
 		?>
 		<canvas id="page-modified-last-crawl" width="400" height="200"></canvas>
 		<script>
+		$(window).load(function(){
 			var ctx = $("#page-modified-last-crawl");
 			var data = {
 				datasets: [{
@@ -97,6 +98,7 @@ class Page_Modified_Dashboard_Widget {
 				data: data,
 				options: options
 			});
+		}(jQuery));
 		</script>
 		<div class="wppm-dashboard-widget">
 			<div class="table table_left table_urls">
