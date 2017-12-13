@@ -158,8 +158,12 @@ class Page_Modified_Dashboard_Widget {
 				<?php $details_url = sprintf( 'https://app.pagemodified.com/domain/%d/histories/%d', $last_crawl->history->domain_id, $last_crawl->history->id ); ?>
 				<a class="button secondary" target="_blank" href="<?php echo $details_url; ?>"><?php _e( 'View in Page Modified', 'wp-page-modified' ); ?></a>
 				<span class="completed-time">
-					<?php _e( 'Completed at', 'wp-page-modified' ); ?>:&nbsp;
-					<?php echo date( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), strtotime( $last_crawl->history->updated_at ) ); ?>
+					<?php
+					printf(
+						__( 'Completed on %s at %s', 'wp-page-modified' ),
+						date_i18n( get_option( 'date_format' ), strtotime( $last_crawl->history->updated_at ) ),
+						date_i18n( get_option( 'time_format' ), strtotime( $last_crawl->history->updated_at ) )
+					); ?>
 				</span>
 			</div>
 		</div>
