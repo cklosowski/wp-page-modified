@@ -3,7 +3,7 @@ Contributors: cklosows
 Tags: page modified, pagemodified, crawler, utility
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 Donate link: https://chrisk.io/i/donate
 License: GPLv2 or later
 
@@ -24,14 +24,18 @@ By connecting this plugin with your [Page Modified](https://pagemodified.com) AP
 
 == Changelog ==
 
-= 1.0.2 =
+= 1.0.3, November 13, 2017 =
+* Fix: Fatal error would occur on older versions of PHP.
+* Fix: Improve jQuery compatibility.
+
+= 1.0.2, November 12, 2017 =
 * New: Added crawl completion date and time to the dashboard widget.
 * Fix: Prevent a potential jQuery conflict.
 
-= 1.0.1 =
+= 1.0.1, November 12, 2017 =
 * Fix: Re-introduce caching into the API calls.
 
-= 1.0 =
+= Version 1.0, November 12, 2017 =
 * New: Initial Release
 
 == Screenshots ==

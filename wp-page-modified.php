@@ -4,7 +4,7 @@
  Plugin URI: https://pagemodified.com
  Description: Get results from your Page Modified crawls in your WordPress admin.
  Author: cklosows
- Version: 1.0.2
+ Version: 1.0.3
  Author URI: https://chrisk.io
  Text Domain: wp-page-modified
  Domain Path: languages
@@ -71,7 +71,7 @@ class WP_Page_Modified {
 	 */
 	private function constants() {
 		// Plugin version
-		self::$version = '1.0.2';
+		self::$version = '1.0.3';
 
 		// Plugin Folder Path
 		self::$plugin_dir = trailingslashit( plugin_dir_path( __FILE__ ) );
