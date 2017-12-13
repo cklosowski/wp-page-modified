@@ -35,4 +35,5 @@ By connecting this plugin with your [Page Modified](https://pagemodified.com) AP
 * New: Initial Release
 
 == Screenshots ==
-None at this time
+
+1. Informational dashboard widget
