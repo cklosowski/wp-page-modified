@@ -3,7 +3,7 @@ Contributors: cklosows
 Tags: page modified, pagemodified, crawler, utility
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 Donate link: https://chrisk.io/i/donate
 License: GPLv2 or later
 
@@ -23,6 +23,9 @@ By connecting this plugin with your [Page Modified](https://pagemodified.com) AP
 6a. If the Widget does not show, click the 'Screen Options' menu from the top right of the screen and check the box for 'Page Modified - Last Crawl'
 
 == Changelog ==
+
+= 1.0.4, November 13, 2017 =
+* Fix: Account for other plugins that load older versions of ChartJS.
 
 = 1.0.3, November 13, 2017 =
 * Fix: Fatal error would occur on older versions of PHP.

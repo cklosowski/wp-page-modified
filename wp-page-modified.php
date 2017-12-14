@@ -4,7 +4,7 @@
  Plugin URI: https://pagemodified.com
  Description: Get results from your Page Modified crawls in your WordPress admin.
  Author: cklosows
- Version: 1.0.3
+ Version: 1.0.4
  Author URI: https://chrisk.io
  Text Domain: wp-page-modified
  Domain Path: languages
@@ -71,7 +71,7 @@ class WP_Page_Modified {
 	 */
 	private function constants() {
 		// Plugin version
-		self::$version = '1.0.3';
+		self::$version = '1.0.4';
 
 		// Plugin Folder Path
 		self::$plugin_dir = trailingslashit( plugin_dir_path( __FILE__ ) );
@@ -102,7 +102,7 @@ class WP_Page_Modified {
 	 * @since 1.0
 	 */
 	private function hooks() {
-		add_action( 'admin_enqueue_scripts', array( $this, 'scripts' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'scripts' ), 99999999 );
 	}
 
 	/**
@@ -116,7 +116,7 @@ class WP_Page_Modified {
 			return;
 		}
 
-		wp_register_script( 'wppm-chart-js', 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js', array( 'jquery' ), null, false );
+		wp_register_script( 'wppm-chart-js', 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js', array( 'jquery' ), null, true );
 		wp_enqueue_script( 'wppm-chart-js' );
 
 		wp_register_style( 'wppm-admin-styles', self::$plugin_url . 'assets/css/admin.css' );

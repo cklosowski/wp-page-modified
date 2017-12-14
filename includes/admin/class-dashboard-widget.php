@@ -56,8 +56,8 @@ class Page_Modified_Dashboard_Widget {
 		?>
 		<canvas id="page-modified-last-crawl" width="400" height="200"></canvas>
 		<script>
-		jQuery(function($) {
-			var ctx  = $("#page-modified-last-crawl");
+		jQuery(document).ready(function() {
+			var ctx  = document.getElementById("page-modified-last-crawl").getContext("2d");
 			var data = {
 				datasets: [{
 					data: [
@@ -93,7 +93,7 @@ class Page_Modified_Dashboard_Widget {
 				}
 			};
 
-			var myDoughnutChart = new Chart(ctx, {
+			var wppm_dashboard_widget = new Chart(ctx, {
 				type   : 'doughnut',
 				data   : data,
 				options: options
